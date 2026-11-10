@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Birdie Squad | Badminton Social Community</title>
+  <meta name="description" content="Birdie Squad – a badminton social community for all levels. Weekend meetups with warm-ups, fun activities and mix & match games." />
+  <link rel="icon" href="assets/logo.jpg" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="nav">
+    <a href="#home" class="brand"><img src="assets/logo.jpg" alt="Birdie Squad logo" /><span>Birdie Squad</span></a>
+    <button class="menu-toggle" aria-label="Toggle menu">☰</button>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#meetup">The Meetup</a>
+      <a href="#who">Who Can Join</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contact" class="btn btn-small">Join Us</a>
+    </nav>
+  </header>
+
+  <section id="home" class="hero">
+    <div class="hero-text">
+      <p class="tag">🏸 Badminton Social</p>
+      <h1>Play. Laugh. <span>Connect.</span></h1>
+      <p>A badminton community for <strong>all levels</strong>. Weekend social meetups where the goal isn't an intense sweat-out match — it's meeting like-minded sporty people and having a great time on court.</p>
+      <div class="cta">
+        <a href="https://wa.me/916366376397?text=Hi%20Birdie%20Squad!%20I'd%20like%20to%20join%20the%20weekend%20meetup%20%F0%9F%8F%B8" class="btn" target="_blank" rel="noopener">Join the Next Meetup</a>
+        <a href="https://instagram.com/birdie.squads" class="btn btn-outline" target="_blank" rel="noopener">@birdie.squads</a>
+      </div>
+    </div>
+    <img class="hero-logo" src="assets/logo.jpg" alt="Birdie Squad Badminton Social" />
+  </section>
+
+  <section id="about" class="section">
+    <h2>Why Birdie Squad?</h2>
+    <div class="cards">
+      <div class="card"><div class="icon">🤝</div><h3>Socialize</h3><p>Make new friends who love sports as much as you do.</p></div>
+      <div class="card"><div class="icon">😄</div><h3>Fun First</h3><p>No pressure, no ego. Just good vibes and good rallies.</p></div>
+      <div class="card"><div class="icon">🌱</div><h3>All Levels</h3><p>Beginner, rusty, or regular player — everyone fits in.</p></div>
+      <div class="card"><div class="icon">📅</div><h3>Every Weekend</h3><p>A relaxed weekend ritual to unwind and stay active.</p></div>
+    </div>
+  </section>
+
+  <section id="meetup" class="section alt">
+    <h2>How a Meetup Flows</h2>
+    <div class="timeline">
+      <div class="step"><span>1</span><h3>Warm Up</h3><p>Ease in together with light stretches and movement — a great icebreaker.</p></div>
+      <div class="step"><span>2</span><h3>Fun Activities</h3><p>Playful drills and games that get everyone laughing and mingling.</p></div>
+      <div class="step"><span>3</span><h3>Mix &amp; Match Games</h3><p>Rotating partners so you play with (and meet) as many people as possible.</p></div>
+    </div>
+  </section>
+
+  <section id="who" class="section">
+    <h2>Who Can Join?</h2>
+    <ul class="checklist">
+      <li>✔ Beginners picking up a racquet for the first time</li>
+      <li>✔ Players getting back into the game</li>
+      <li>✔ Regulars who want a chill, social session</li>
+      <li>✔ Anyone new in town looking to make friends</li>
+    </ul>
+    <p class="note">Not for you if you're only looking for intense competitive matches 😉</p>
+  </section>
+
+  <section id="faq" class="section alt">
+    <h2>FAQ</h2>
+    <details><summary>Do I need to be good at badminton?</summary><p>Not at all! Birdie Squad is for all levels. Fun and friendship come first.</p></details>
+    <details><summary>When are the meetups?</summary><p>Every weekend. Follow <a href="https://instagram.com/birdie.squads" target="_blank" rel="noopener">@birdie.squads</a> on Instagram for dates, timings and venue.</p></details>
+    <details><summary>What should I bring?</summary><p>Comfortable sportswear, non-marking shoes, a water bottle, and a racquet if you have one.</p></details>
+    <details><summary>Can I come alone?</summary><p>Absolutely — most people do! Mix &amp; match games make it easy to meet everyone.</p></details>
+  </section>
+
+  <section id="contact" class="section contact">
+    <h2>Join the Squad</h2>
+    <p>Got questions or want to book a spot? Reach out!</p>
+    <div class="contact-grid">
+      <a class="contact-card" href="https://wa.me/916366376397" target="_blank" rel="noopener"><div class="icon">💬</div><h3>WhatsApp</h3><p>+91 63663 76397</p></a>
+      <a class="contact-card" href="https://instagram.com/birdie.squads" target="_blank" rel="noopener"><div class="icon">📸</div><h3>Instagram</h3><p>@birdie.squads</p></a>
+    </div>
+  </section>
+
+  <footer>
+    <p>© <span id="year"></span> Birdie Squad · Badminton Social · Made with 💜 for the community</p>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    const nav = document.querySelector('.nav nav');
+    document.querySelector('.menu-toggle').onclick = () => nav.classList.toggle('open');
+    nav.querySelectorAll('a').forEach(a => a.onclick = () => nav.classList.remove('open'));
+  </script>
+</body>
+</html>
