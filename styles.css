@@ -61,6 +61,13 @@ details p { margin-top: .6rem; color: var(--muted); }
 .contact-card { text-decoration: none; color: var(--cream); }
 
 footer { text-align: center; padding: 2rem; color: var(--muted); border-top: 1px solid #3d1c4a; font-size: .9rem; }
+footer a { color: inherit; }
+
+.legal { max-width: 820px; margin: 0 auto; text-align: left; padding-top: 7rem; line-height: 1.7; }
+.legal h2 { text-align: center; }
+.legal h3 { margin: 2rem 0 .5rem; }
+.legal ul { padding-left: 1.25rem; }
+.legal a { color: inherit; }
 
 img { max-width: 100%; height: auto; }
 body { overflow-x: hidden; }
